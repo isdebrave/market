@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ColorSchemeConfig {
+  static const Color white = Color(0xFFFFFFFF);
+  static const Color black = Color(0xFF000000);
+
   static const Color primary = Color(0xFF5F0080);
   static const Color onPrimary = Color(0xFFFFFFFF);
 

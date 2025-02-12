@@ -3,7 +3,7 @@ import 'package:market/core/theme/config/color_scheme_config.dart';
 import 'package:market/core/theme/config/text_theme_config.dart';
 
 class CustomTheme {
-  static get textTheme => const TextTheme(
+  static TextTheme get textTheme => const TextTheme(
         ///
         displayLarge: TextThemeConfig.displayLarge,
         displayMedium: TextThemeConfig.displayMedium,
@@ -30,7 +30,7 @@ class CustomTheme {
         bodySmall: TextThemeConfig.bodySmall,
       );
 
-  static get colorScheme => const ColorScheme(
+  static ColorScheme get colorScheme => const ColorScheme(
         brightness: Brightness.light,
 
         ///

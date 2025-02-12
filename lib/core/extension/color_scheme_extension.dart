@@ -3,11 +3,15 @@ import 'package:market/core/theme/config/color_scheme_config.dart';
 
 extension ColorSchemeExt on ColorScheme {
   /// deprecated
-  Color get background => ColorSchemeConfig.background;
-  Color get onBackground => ColorSchemeConfig.onBackground;
-  Color get surfaceVariant => ColorSchemeConfig.surfaceVariant;
+  // Color get background => ColorSchemeConfig.background;
+  // Color get onBackground => ColorSchemeConfig.onBackground;
+  // Color get surfaceVariant => ColorSchemeConfig.surfaceVariant;
 
   /// custom
+  Color get white => ColorSchemeConfig.white;
+  Color get black => ColorSchemeConfig.black;
+
+  ///
   Color get contentPrimary => ColorSchemeConfig.contentPrimary;
   Color get contentSecondary => ColorSchemeConfig.contentSecondary;
   Color get contentTertiary => ColorSchemeConfig.contentTertiary;
