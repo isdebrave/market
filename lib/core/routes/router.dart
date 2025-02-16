@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:market/home_screen.dart';
+import 'package:market/presentation/page/main_page.dart';
 import 'package:market/splash_screen.dart';
 
 final GoRouter router = GoRouter(
@@ -9,14 +8,12 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: '/splash',
       name: SplashScreen.routeName,
-      builder: (BuildContext context, GoRouterState state) =>
-          const SplashScreen(),
+      builder: (_, __) => const SplashScreen(),
     ),
     GoRoute(
-      path: '/home',
-      name: HomeScreen.routeName,
-      builder: (BuildContext context, GoRouterState state) =>
-          const HomeScreen(),
+      path: '/main',
+      name: MainPage.routeName,
+      builder: (_, __) => const MainPage(),
     ),
   ],
 );

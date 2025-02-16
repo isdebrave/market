@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:market/core/theme/config/color_scheme_config.dart';
-import 'package:market/core/theme/config/text_theme_config.dart';
+import 'package:market/core/theme/config/color_scheme/color_scheme_config.dart';
+import 'package:market/core/theme/config/text_theme/text_theme_config.dart';
 
 class CustomTheme {
   static TextTheme get textTheme => const TextTheme(

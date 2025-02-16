@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:market/core/theme/config/icon_config.dart';
-import 'package:market/home_screen.dart';
+import 'package:market/presentation/page/main_page.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
     Timer(
       const Duration(seconds: 2),
-      () => context.goNamed(HomeScreen.routeName),
+      () => context.goNamed(MainPage.routeName),
     );
   }
 

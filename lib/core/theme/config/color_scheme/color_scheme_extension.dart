@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:market/core/theme/config/color_scheme_config.dart';
+import 'package:market/core/theme/config/color_scheme/color_scheme_config.dart';
 
 extension ColorSchemeExt on ColorScheme {
   /// deprecated
