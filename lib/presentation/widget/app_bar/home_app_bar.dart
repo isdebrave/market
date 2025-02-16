@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:market/core/theme/config/color_scheme/color_scheme_extension.dart';
-import 'package:market/core/theme/config/text_theme/text_theme_extension.dart';
 import 'package:market/core/theme/config/icon_config.dart';
+import 'package:market/core/theme/config/text_theme/text_theme_extension.dart';
 import 'package:market/core/util/custom_svg_picture.dart';
 import 'package:market/presentation/cubit/home_app_bar_cubit.dart';
 
@@ -12,7 +10,6 @@ class HomeAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ColorScheme colorScheme = Theme.of(context).colorScheme;
     final TextTheme textTheme = Theme.of(context).textTheme;
 
     return BlocBuilder<HomeAppBarCubit, HomeAppBarEnum>(
