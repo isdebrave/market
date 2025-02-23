@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:injectable/injectable.dart';
 import 'package:market/core/common/result/result.dart';
 import 'package:market/core/common/status.dart';
 import 'package:market/domain/model/home_menus/home_menus_model.dart';
@@ -11,6 +12,7 @@ part 'home_menus_bloc.freezed.dart';
 part 'home_menus_event.dart';
 part 'home_menus_state.dart';
 
+@injectable
 class HomeMenusBloc extends Bloc<HomeMenusEvent, HomeMenusState> {
   HomeMenusBloc(this._usecase) : super(const HomeMenusState()) {
     on<GetHomeMenusEvent>(getHomeMenus);

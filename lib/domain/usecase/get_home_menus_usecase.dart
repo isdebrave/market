@@ -1,9 +1,11 @@
+import 'package:injectable/injectable.dart';
 import 'package:market/core/common/response_wrapper/response_wrapper.dart';
 import 'package:market/core/common/result/result.dart';
 import 'package:market/core/common/status.dart';
 import 'package:market/domain/model/home_menus/home_menus_model.dart';
 import 'package:market/domain/repository/menus_repository.dart';
 
+@singleton
 class GetHomeMenusUsecase {
   const GetHomeMenusUsecase(this._repository);
 
