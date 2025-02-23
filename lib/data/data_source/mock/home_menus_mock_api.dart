@@ -7,7 +7,9 @@ import 'package:market/presentation/cubit/home_app_bar_cubit.dart';
 
 class HomeMenusMockApi implements HomeMenusApi {
   @override
-  Future<List<HomeMenusDto>> getHomeMenus({required String homeAppBarType}) =>
+  Future<List<HomeMenusDto>> getHomeMenus({
+    required String homeAppBarType,
+  }) =>
       Future<List<HomeMenusDto>>(
         () => parser(homeAppBarType == HomeAppBarEnum.market.name
             ? HomeMenusMockData.market

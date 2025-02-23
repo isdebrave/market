@@ -39,7 +39,8 @@ class HomeAppBar extends StatelessWidget {
                     indicatorSize: TabBarIndicatorSize.tab,
                     tabAlignment: TabAlignment.center,
                     isScrollable: true,
-                    labelPadding: const EdgeInsets.fromLTRB(12, 6, 12, 3),
+                    labelPadding:
+                        const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     dividerColor: Colors.transparent,
                     indicator: BoxDecoration(
                       color: state.theme.indicator,

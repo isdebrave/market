@@ -4,8 +4,8 @@ import 'package:market/core/common/status.dart';
 import 'package:market/domain/model/home_menus/home_menus_model.dart';
 import 'package:market/domain/repository/menus_repository.dart';
 
-class HomeMenusUsecase {
-  const HomeMenusUsecase(this._repository);
+class GetHomeMenusUsecase {
+  const GetHomeMenusUsecase(this._repository);
 
   final HomeMenusRepository _repository;
 
