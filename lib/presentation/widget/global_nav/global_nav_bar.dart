@@ -15,36 +15,33 @@ class GlobalNavBar extends StatelessWidget {
 
     return SizedBox(
       height: 46,
-      child: DefaultTabController(
-        length: dataList.length,
-        child: TabBar(
-          isScrollable: true,
-          tabAlignment: TabAlignment.start,
-          labelPadding: const EdgeInsets.symmetric(horizontal: 8),
-          dividerColor: Colors.transparent,
-          indicator: BoxDecoration(
-            border: Border(
-              bottom: BorderSide(
-                color: colorScheme.primary,
-                width: 2,
-              ),
+      child: TabBar(
+        isScrollable: true,
+        tabAlignment: TabAlignment.start,
+        labelPadding: const EdgeInsets.symmetric(horizontal: 8),
+        dividerColor: colorScheme.contentFourth,
+        indicator: BoxDecoration(
+          border: Border(
+            bottom: BorderSide(
+              color: colorScheme.primary,
+              width: 2,
             ),
           ),
-          labelStyle: textTheme.titleSmallSemiBold?.copyWith(
-            color: colorScheme.primary,
-          ),
-          unselectedLabelStyle: textTheme.titleSmall?.copyWith(
-            color: colorScheme.contentSecondary,
-          ),
-          tabs: dataList
-              .map(
-                (HomeMenusModel e) => SizedBox(
-                  width: 65,
-                  child: Tab(text: e.title),
-                ),
-              )
-              .toList(),
         ),
+        labelStyle: textTheme.titleSmallSemiBold?.copyWith(
+          color: colorScheme.primary,
+        ),
+        unselectedLabelStyle: textTheme.titleSmall?.copyWith(
+          color: colorScheme.contentSecondary,
+        ),
+        tabs: dataList
+            .map(
+              (HomeMenusModel e) => SizedBox(
+                width: 65,
+                child: Tab(text: e.title),
+              ),
+            )
+            .toList(),
       ),
     );
   }
